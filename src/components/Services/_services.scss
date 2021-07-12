@@ -1,0 +1,80 @@
+.service {
+    text-align: center;
+    @include max-width;
+    overflow-x: hidden;
+    & .__service__top {
+        h2 {
+            font-size: 60px;
+            font-weight: 700;
+            margin-top: 50px;
+            color: $primary-dark;
+            @include breakpoints-down(medium) {
+                font-size: 45px;
+            }
+            @include breakpoints-down(small) {
+                font-size: 40px;
+            }
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 35px;
+            @include breakpoints-down(medium) {
+                font-size: 25px;
+            }
+            @include breakpoints-down(small) {
+                font-size: 20px;
+            }
+        }
+    }
+
+    & .__service__img {
+        margin: 50px 0px;
+        > img {
+            width: 137px;
+        }
+    }
+
+    & .__service__card {
+        padding: 0px 20px;
+
+        & .__service__card__body {
+            // background: url("../../images/automatedecom-img001.jpg");
+            background-color: black;
+            margin-top: 20px;
+            padding: 10px;
+            background-attachment: fixed;
+            background-position: center center;
+            border-radius: 20px;
+            margin-bottom: 80px;
+
+            & .__card_icon {
+                margin-top: 30px;
+                color: $primary-dark;
+            }
+
+            & .card-title {
+                font-size: 45px;
+                color: $primary-dark;
+                @include breakpoints-down(medium) {
+                    font-size: 45px;
+                }
+                @include breakpoints-down(small) {
+                    font-size: 40px;
+                }
+            }
+
+            & .card-text {
+                color: rgb(231, 225, 225);
+                font-weight: 400;
+                font-size: 25px;
+                @include breakpoints-down(medium) {
+                    font-size: 25px;
+                }
+                @include breakpoints-down(small) {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

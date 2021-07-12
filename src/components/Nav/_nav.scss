@@ -1,0 +1,33 @@
+.nav {
+    @include max-width;
+    padding: 10px 0px;
+    img {
+        width: 150px;
+        height: 80px;
+        @include breakpoints-down(small) {
+            width: 200px;
+        }
+        @include breakpoints-down(x-small) {
+            width: 120px;
+        }
+    }
+    > div {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        > a {
+            color: #555555;
+            margin-left: 30px;
+            font-size: 20px;
+            font-weight: 700;
+            @include breakpoints-down(small) {
+                margin-left: 20px;
+                font-size: 16px;
+            }
+            @include breakpoints-down(x-small) {
+                margin-left: 10px;
+                font-size: 14px;
+            }
+        }
+    }
+}

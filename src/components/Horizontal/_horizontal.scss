@@ -1,0 +1,15 @@
+.horizontal__line {
+  text-align: center;
+  & ._hr{
+    margin-top: 0rem;
+    margin-bottom: -0.25rem;
+    border: 0;
+    border-top: 5px solid $primary-dark;
+  }
+
+  img {
+    height: 48px;
+    width: 80px;
+  }
+}
+

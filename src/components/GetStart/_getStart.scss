@@ -1,0 +1,80 @@
+.getStart {
+    text-align: center;
+    overflow-x: hidden;
+    @include max-width;
+    & .__getStart__top {
+        h2 {
+            font-size: 50px;
+            font-weight: 700;
+            margin-top: 50px;
+            color: $primary-dark;
+            @include breakpoints-down(medium) {
+                font-size: 45px;
+                margin-top: 35px;
+            }
+            @include breakpoints-down(small) {
+                font-size: 40px;
+                margin-top: 30px;
+            }
+        }
+
+        p {
+            margin-top: 30px;
+            color: #000;
+            font-weight: 400;
+            font-size: 22px;
+            padding: 0px 100px;
+            @include breakpoints-down(medium) {
+                font-size: 25px;
+                padding: 0px 15px;
+            }
+            @include breakpoints-down(small) {
+                font-size: 20px;
+            }
+        }
+    }
+    & .schedule__btn {
+        font-size: 30px;
+        margin-top: 50px;
+        margin-bottom: 80px;
+
+        &:hover {
+            animation: mymove 0.2s;
+        }
+        @keyframes mymove {
+            0% {
+                transform: rotate(-0.5deg);
+            }
+            50% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(0.5deg);
+            }
+        }
+
+        @include breakpoints-down(small) {
+            padding: 0px 10px;
+        }
+        > a {
+            > button {
+                text-decoration: none;
+                background-color: $button-color;
+                color: #fff;
+                font-size: 50px;
+                padding: 15px 100px;
+                font-weight: 600;
+                border: none;
+                @include breakpoints-down(medium) {
+                    font-size: 26px;
+                    padding: 15px 40px;
+                    border-radius: 10px;
+                }
+                @include breakpoints-down(small) {
+                    font-size: 20px;
+                    padding: 15px 30px;
+                }
+            }
+        }
+    }
+}

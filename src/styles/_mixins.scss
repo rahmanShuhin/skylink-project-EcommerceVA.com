@@ -1,0 +1,49 @@
+//640px, 1024px, 1400px
+$breakpoints-up: (
+    "medium": "40em",
+    "large": "64em",
+    "x-large": "87.5em",
+);
+
+//639px 1023px 1399px
+$breakpoints-down: (
+    "x-small": "25em",
+    "small": "39.9375em",
+    "medium": "64em",
+    "large": "87.4375em",
+    "special": "50.625em",
+);
+
+@mixin breakpoints-up($size) {
+    @media (min-width: map-get($breakpoints-up, $size)) {
+        @content;
+    }
+}
+@mixin breakpoints-down($size) {
+    @media (max-width: map-get($breakpoints-down, $size)) {
+        @content;
+    }
+}
+
+//max width for large device and make content center
+
+@mixin max-width {
+    max-width: 1250px;
+    margin: 0px auto;
+    @include breakpoints-down(medium) {
+        width: 95%;
+    }
+}
+
+//for fixed overlay background
+
+@mixin fixed-bg($size) {
+    padding-top: $size;
+    padding-bottom: $size;
+    background: linear-gradient($primary-bg, $secondary-bg),
+        url(https://images.pexels.com/photos/3183198/pexels-photo-3183198.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-attachment: fixed;
+    background-position: center center;
+    border-top: 5px solid rgba(0, 0, 0, 0.33);
+    border-bottom: 5px solid rgba(0, 0, 0, 0.33);
+}
