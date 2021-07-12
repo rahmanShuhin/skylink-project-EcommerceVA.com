@@ -40,22 +40,25 @@
 
         & .__service__card__body {
             // background: url("../../images/automatedecom-img001.jpg");
-            background-color: black;
+            background-color: #047aa7b5;
+            box-shadow: 0 19px 38px rgba(77, 75, 75, 0.3),
+                0 15px 12px rgba(0, 0, 0, 0.22);
             margin-top: 20px;
             padding: 10px;
             background-attachment: fixed;
             background-position: center center;
             border-radius: 20px;
             margin-bottom: 80px;
-
+            min-height: 550px;
             & .__card_icon {
+                color: #e6fbffe8;
                 margin-top: 30px;
-                color: $primary-dark;
+                // color: $primary-dark;
             }
 
             & .card-title {
                 font-size: 45px;
-                color: $primary-dark;
+                color: #096dbae8;
                 @include breakpoints-down(medium) {
                     font-size: 45px;
                 }
@@ -65,7 +68,7 @@
             }
 
             & .card-text {
-                color: rgb(231, 225, 225);
+                color: #fffdfd;
                 font-weight: 400;
                 font-size: 25px;
                 @include breakpoints-down(medium) {

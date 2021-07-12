@@ -1,11 +1,13 @@
 .contact {
     border-top: 5px solid $primary-dark;
     overflow-x: hidden;
+
     &__body {
         @include max-width;
         box-shadow: 1px 1px 7px gray;
         max-width: 870px;
         margin: 50px auto;
+        background-color: #d5f4f9;
     }
     &__form {
         padding: 25px;
@@ -67,7 +69,7 @@
             }
         }
         button {
-            background: $primary-light;
+            background: $button-color !important;
             padding: 10px;
             font-size: 25px;
             color: white;

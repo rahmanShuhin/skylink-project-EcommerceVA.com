@@ -1,0 +1,36 @@
+.trusted {
+    background-color: #292f45;
+    overflow-x: hidden;
+    padding: 100px 0px;
+    text-align: center;
+    > div:nth-child(1) {
+        display: grid;
+        place-items: center;
+        > h2 {
+            color: white;
+            text-align: center !important;
+            margin-bottom: 100px;
+            max-width: 700px;
+            font-size: 40px;
+            @include breakpoints-down(medium) {
+                font-size: 30px;
+            }
+        }
+    }
+    > div {
+        @include max-width;
+        text-align: center;
+    }
+    .img__box {
+        display: grid;
+        place-items: center;
+        @include breakpoints-down(medium) {
+            margin-bottom: 30px;
+        }
+    }
+    img {
+        background-color: #292f45;
+        border: none;
+        text-align: center;
+    }
+}

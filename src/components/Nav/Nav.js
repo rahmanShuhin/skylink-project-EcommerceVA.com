@@ -1,17 +1,27 @@
-import React from "react";
+import React, { useRef } from "react";
 import logo from "../../images/Transparent Logo.svg";
 import { Link } from "react-router-dom";
 const Nav = () => {
+    const hamburgerRef = useRef();
+    const navLinkRef = useRef();
+    const handleBurger = () => {
+        hamburgerRef.current.classList.toggle("animate");
+        navLinkRef.current.classList.toggle("hamburger__menu__active");
+    };
     return (
         <div className="nav">
             <Link to="/">
                 <img src={logo} alt="" />
             </Link>
-            <div>
+            <div className="nav__right" ref={navLinkRef}>
                 <Link to="/walmart/">Walmart</Link>
                 <Link to="/amazon/">Amazon</Link>
                 <Link to="/fb-dropship/">FB Dropship</Link>
-                <Link to="/request-a-call/">Contact</Link>
+                <a href="/request-a-call/">Contact</a>
+            </div>
+            {/* mobile hamburger menu */}
+            <div className="menu-wrapper" onClick={handleBurger}>
+                <div ref={hamburgerRef} className="hamburger-menu"></div>
             </div>
         </div>
     );

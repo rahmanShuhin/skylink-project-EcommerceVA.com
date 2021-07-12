@@ -20,9 +20,7 @@ const WatchVideo = () => {
                         </h2>
                         <div className="schedule__btn">
                             <Link to="/request-a-call/">
-                                <button>
-                                    Schedule a Free Consultation Call
-                                </button>
+                                <button>Request for Free Consultation</button>
                             </Link>
                         </div>
                     </Col>

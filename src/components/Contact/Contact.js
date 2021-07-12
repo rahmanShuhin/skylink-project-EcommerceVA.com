@@ -68,21 +68,23 @@ const Contact = () => {
                 </>
             ) : (
                 <div className="contact" data-aos="fade-up">
-                    <Helmet>
+                    {/* <Helmet>
                         <title>Contact | Kuf Academy</title>
                         <meta
                             name="description"
                             content="Get a fully functional E-Commerce business created, modified, and scaled 100% for you."
                         />
-                    </Helmet>
+                    </Helmet> */}
                     <div className="contact__body">
                         <form className="contact__form" onSubmit={handleSubmit}>
                             <div className="contact__form__top">
-                                <p>REQUEST A CONSULTATION CALL</p>
                                 <p>
-                                    Please complete the form below or email us
-                                    at <b>contact@kufacademy.com</b>. We will
-                                    review your submission before our call.
+                                    Let's Take Your Business to the Next Level
+                                </p>
+                                <p>
+                                    Message us on Facebook or, email us at
+                                    <b> info@ecommerceva.com</b> or, just fill
+                                    up the form below.
                                 </p>
                             </div>
                             <div>
