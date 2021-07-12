@@ -1,0 +1,86 @@
+.home{
+  // background-color: #f7feff;
+  h2 {
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 50px;
+    color: $primary-dark;
+    margin-bottom: 40px;
+
+    @include breakpoints-down(medium) {
+        font-size: 45px;
+    }
+    @include breakpoints-down(small) {
+        font-size: 40px;
+    }
+}
+  &__content{
+    text-align: center;
+    @include max-width;
+    overflow-x: hidden;
+  }
+
+  &__card{
+    padding: 0px 20px;
+
+  @include breakpoints-down(medium) {
+      padding: 0px 0px;
+    }
+  @include breakpoints-down(small) {
+    padding: 0px 0px;
+   }
+  }
+
+  & .home__card__body{
+    background-color: black;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 80px;
+  }
+
+  &__card_icon {
+    margin-top: 30px;
+    color: $primary-dark;
+  }
+
+  & .card-title {
+    font-size: 39px;
+    color: $primary-dark;
+    @include breakpoints-down(medium) {
+        font-size: 45px;
+    }
+    @include breakpoints-down(small) {
+        font-size: 40px;
+    }
+  }
+
+  & .card-text {
+    color: rgb(231, 225, 225);
+    font-weight: 400;
+    font-size: 25px;
+    @include breakpoints-down(medium) {
+        font-size: 25px;
+    }
+    @include breakpoints-down(small) {
+        font-size: 20px;
+    }
+  }
+
+  button {
+    background: $primary-light;
+    padding: 10px 50px;
+    font-size: 20px;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    margin-bottom: 10px;
+
+    @include breakpoints-down(medium) {
+      font-size: 20px;
+    }
+    @include breakpoints-down(small) {
+      font-size: 20px;
+    }
+}
+}
