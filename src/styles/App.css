@@ -19,6 +19,7 @@ body {
   padding: 0px;
   margin: 0px;
   font-family: "Source Sans Pro", sans-serif;
+  background-color: #f7feff !important;
 }
 
 .nav {
@@ -480,11 +481,6 @@ body {
   border-top: 5px solid #3997dfe8;
 }
 
-.horizontal__line img {
-  height: 48px;
-  width: 80px;
-}
-
 .watch__container {
   padding: 80px 20px;
   max-width: 1250px;
@@ -659,6 +655,15 @@ body {
   .results .__results__top p {
     font-size: 20px;
   }
+}
+
+.results .main__img img {
+  -webkit-box-shadow: 0 2px 5px 2px #ada9a9;
+          box-shadow: 0 2px 5px 2px #ada9a9;
+  height: 600px;
+  width: 450px;
+  margin-bottom: 20px;
+  margin-top: 50px;
 }
 
 .results .__results__img {
@@ -1056,18 +1061,19 @@ body {
   padding: 10px;
   border-radius: 20px;
   margin-bottom: 80px;
+  background-color: #047aa7b5;
   -webkit-box-shadow: 0 19px 38px rgba(77, 75, 75, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
           box-shadow: 0 19px 38px rgba(77, 75, 75, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
 .home__card_icon {
   margin-top: 30px;
-  color: #3997dfe8;
+  color: #e6fbffe8;
 }
 
 .home .card-title {
   font-size: 39px;
-  color: #3997dfe8;
+  color: #096dbae8;
 }
 
 @media (max-width: 64em) {
@@ -1083,7 +1089,7 @@ body {
 }
 
 .home .card-text {
-  color: #e7e1e1;
+  color: #fffdfd;
   font-weight: 400;
   font-size: 25px;
 }
@@ -1101,11 +1107,11 @@ body {
 }
 
 .home button {
-  background: #096dbae8;
+  background: #188ba5 !important;
   padding: 10px 50px;
   font-size: 20px;
   border-radius: 20px;
-  color: white;
+  color: #fffdfd;
   border: none;
   margin-bottom: 10px;
 }

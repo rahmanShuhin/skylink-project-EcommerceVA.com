@@ -37,18 +37,19 @@
         padding: 10px;
         border-radius: 20px;
         margin-bottom: 80px;
+        background-color: #047aa7b5;
         box-shadow: 0 19px 38px rgba(77, 75, 75, 0.3),
             0 15px 12px rgba(0, 0, 0, 0.22);
     }
 
     &__card_icon {
         margin-top: 30px;
-        color: $primary-dark;
+        color: #e6fbffe8;;
     }
 
     & .card-title {
         font-size: 39px;
-        color: $primary-dark;
+        color:#096dbae8;
         @include breakpoints-down(medium) {
             font-size: 45px;
         }
@@ -58,7 +59,7 @@
     }
 
     & .card-text {
-        color: rgb(231, 225, 225);
+        color: #fffdfd;
         font-weight: 400;
         font-size: 25px;
         @include breakpoints-down(medium) {
@@ -70,11 +71,11 @@
     }
 
     button {
-        background: $primary-light;
+        background: $button-color !important;
         padding: 10px 50px;
         font-size: 20px;
         border-radius: 20px;
-        color: white;
+        color: #fffdfd;
         border: none;
         margin-bottom: 10px;
 

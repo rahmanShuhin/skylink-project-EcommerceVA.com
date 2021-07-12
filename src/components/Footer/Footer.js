@@ -5,8 +5,8 @@ const Footer = () => {
         <div className="footer">
             <div>
                 <p>
-                    &copy; {new Date().getFullYear()} &nbsp;KufAcademy.com |
-                    contact@kufacademy.com
+                    &copy; {new Date().getFullYear()} &nbsp;EcommerceVA.com |
+                    Tel: +12108074135 | info@ecommerceva.com
                 </p>
             </div>
         </div>

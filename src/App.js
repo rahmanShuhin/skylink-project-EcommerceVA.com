@@ -18,73 +18,73 @@ import Home from "./components/Home/Home";
 import Trusted from "./components/Trusted/Trusted";
 
 function App() {
-    useEffect(() => {
-        AOS.init({ duration: 2000 });
-    }, []);
-    return (
-        <Router>
-            <Switch>
-                <div className="App">
-                    <Nav></Nav>
-                    <Route exact path="/">
-                        <Home></Home>
-                    </Route>
-                    <Route exact path="/amazon/">
-                        <Landing
-                            title={"Get Fully Automated"}
-                            after={"Amazon Store"}
-                            description={
-                                "Through our Management Service, you will be able to create,modify, and scale 100% of your E-Commerce business."
-                            }
-                        ></Landing>
-                        <Services></Services>
-                        <Trusted></Trusted>
-                        <WatchVideo></WatchVideo>
-                        <Automated></Automated>
-                        <Results></Results>
-                        <GetStart></GetStart>
-                        <Contact></Contact>
-                    </Route>
-                    <Route exact path="/walmart/">
-                        <Landing
-                            title={"Get Your Own"}
-                            after={"Automated Walmart Store"}
-                            description={
-                                "Through our Management Service, you will be able to create,modify, and scale 100% of your E-Commerce business."
-                            }
-                        ></Landing>
-                        <Services></Services>
-                        <Trusted></Trusted>
-                        <WatchVideo></WatchVideo>
-                        <Automated></Automated>
-                        <Results></Results>
-                        <GetStart></GetStart>
-                        <Contact></Contact>
-                    </Route>
-                    <Route exact path="/fb-dropship/">
-                        <Landing
-                            title={"Get Your Own"}
-                            after={"FB Dropship Store"}
-                            description={
-                                "Through our Management Service, you will be able to create,modify, and scale 100% of your E-Commerce business."
-                            }
-                        ></Landing>
-                        <Services></Services>
-                        <Trusted></Trusted>
-                        <WatchVideo></WatchVideo>
-                        <Automated></Automated>
-                        <Results></Results>
-                        <GetStart></GetStart>
-                        <Contact></Contact>
-                    </Route>
-                    <Route exact path="/request-a-call/">
-                        <Contact></Contact>
-                    </Route>
-                    <Footer></Footer>
-                </div>
-            </Switch>
-        </Router>
-    );
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+  return (
+    <Router>
+      <Switch>
+        <div className="App">
+          <Nav></Nav>
+          <Route exact path="/">
+            <Home></Home>
+          </Route>
+          <Route exact path="/amazon/">
+            <Landing
+              title={"Get Fully Automated"}
+              after={"Amazon Store"}
+              description={
+                "Through our Management Service, you will be able to create,modify, and scale 100% of your E-Commerce business."
+              }
+            ></Landing>
+            <Services></Services>
+            <Trusted></Trusted>
+            <WatchVideo></WatchVideo>
+            <Automated></Automated>
+            <Results></Results>
+            <GetStart></GetStart>
+            <Contact></Contact>
+          </Route>
+          <Route exact path="/walmart/">
+            <Landing
+              title={"Get Your Own"}
+              after={"Automated Walmart Store"}
+              description={
+                "Through our Management Service, you will be able to create,modify, and scale 100% of your E-Commerce business."
+              }
+            ></Landing>
+            <Services></Services>
+            <Trusted></Trusted>
+            <WatchVideo></WatchVideo>
+            <Automated></Automated>
+            <Results></Results>
+            <GetStart></GetStart>
+            <Contact></Contact>
+          </Route>
+          <Route exact path="/fb-dropship/">
+            <Landing
+              title={"Get Your Own"}
+              after={"FB Dropship Store"}
+              description={
+                "Through our Management Service, you will be able to create,modify, and scale 100% of your E-Commerce business."
+              }
+            ></Landing>
+            <Services></Services>
+            <Trusted></Trusted>
+            <WatchVideo></WatchVideo>
+            <Automated></Automated>
+            <Results></Results>
+            <GetStart></GetStart>
+            <Contact></Contact>
+          </Route>
+          <Route exact path="/request-a-call/">
+            <Contact></Contact>
+          </Route>
+          <Footer></Footer>
+        </div>
+      </Switch>
+    </Router>
+  );
 }
 
 export default App;

@@ -26,6 +26,17 @@
             }
         }
     }
+    & .main__img{
+
+      img {
+        box-shadow: 0 2px 5px 2px rgb(173, 169, 169);
+        height: 600px;
+        width: 450px;
+        margin-bottom: 20px;
+        margin-top: 50px;
+      }
+
+    }
     & .__results__img {
         margin: 50px 0px;
         img {
