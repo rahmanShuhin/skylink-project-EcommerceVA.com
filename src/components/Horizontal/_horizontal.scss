@@ -1,11 +1,9 @@
 .horizontal__line {
-  text-align: center;
-  & ._hr{
-    margin-top: 0rem;
-    margin-bottom: -0.25rem;
-    border: 0;
-    border-top: 5px solid $primary-dark;
-  }
-
+    text-align: center;
+    & ._hr {
+        margin-top: 0rem;
+        margin-bottom: -0.25rem;
+        border: 0;
+        border-top: 5px solid $primary-bg;
+    }
 }
-

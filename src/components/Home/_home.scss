@@ -44,12 +44,12 @@
 
     &__card_icon {
         margin-top: 30px;
-        color: #e6fbffe8;;
+        color: #e6fbffe8;
     }
 
     & .card-title {
         font-size: 39px;
-        color:#096dbae8;
+        color: #e6fbffe8;
         @include breakpoints-down(medium) {
             font-size: 45px;
         }

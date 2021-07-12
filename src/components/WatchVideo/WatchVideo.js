@@ -15,8 +15,8 @@ const WatchVideo = () => {
                         data-aos="fade-right"
                     >
                         <h2>
-                            Check Out The Video To See{" "}
-                            <span>How We Get Things Done - Fast!</span>{" "}
+                            Here's A Video That Shows You How{" "}
+                            <span>We Handle Things Quickly!</span>
                         </h2>
                         <div className="schedule__btn">
                             <Link to="/request-a-call/">
@@ -30,17 +30,21 @@ const WatchVideo = () => {
                             height="400"
                             src="https://youtu.be/P4YbSDIPiWc"
                         ></iframe> */}
+
                         <iframe
                             width="100%"
                             height="400"
-                            src="https://www.youtube.com/embed/P4YbSDIPiWc"
-                            title="Kuf Academy - Automated E-commerce store"
+                            src="https://www.youtube.com/embed/ZBaSUTSoZY4"
+                            title="YouTube video player"
                             frameborder="0"
-                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen
                         ></iframe>
                     </Col>
                 </Row>
+            </div>
+            <div data-aos="fade-up">
+                <Horizontal></Horizontal>
             </div>
         </div>
     );

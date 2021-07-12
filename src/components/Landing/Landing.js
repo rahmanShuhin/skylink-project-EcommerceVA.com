@@ -2,12 +2,18 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect } from "react";
-const Landing = ({ aos_effect, title, after, description }) => {
+
+const Landing = ({ aos_effect, title, after, description, home }) => {
     useEffect(() => {
         document.querySelector(".hamburger-menu").classList.remove("animate");
         document
             .querySelector(".nav__right")
             .classList.remove("hamburger__menu__active");
+    }, []);
+    useEffect(() => {
+        if (!home) {
+            window.scrollTo(0, 0);
+        }
     }, []);
     return (
         <div className="landing" data-aos="fade-up">
@@ -18,6 +24,7 @@ const Landing = ({ aos_effect, title, after, description }) => {
                     content="Get a fully functional E-Commerce business created, modified, and scaled 100% for you."
                 />
             </Helmet>
+
             <div className="landing__top" data-aos="fade-left">
                 <h2>
                     {title} <span>{after}</span>{" "}

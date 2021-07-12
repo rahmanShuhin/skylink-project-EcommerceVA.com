@@ -19,7 +19,7 @@ body {
   padding: 0px;
   margin: 0px;
   font-family: "Source Sans Pro", sans-serif;
-  background-color: #f7feff !important;
+  background-color: #e7f7fd !important;
 }
 
 .nav {
@@ -373,7 +373,7 @@ body {
   font-size: 60px;
   font-weight: 700;
   margin-top: 50px;
-  color: #3997dfe8;
+  color: #096dbae8;
 }
 
 @media (max-width: 64em) {
@@ -437,7 +437,7 @@ body {
 
 .service .__service__card .__service__card__body .card-title {
   font-size: 45px;
-  color: #096dbae8;
+  color: #e6fbffe8;
 }
 
 @media (max-width: 64em) {
@@ -478,7 +478,7 @@ body {
   margin-top: 0rem;
   margin-bottom: -0.25rem;
   border: 0;
-  border-top: 5px solid #3997dfe8;
+  border-top: 5px solid #0d3c61;
 }
 
 .watch__container {
@@ -516,7 +516,7 @@ body {
 
 .watch__container h2 span {
   font-weight: 700;
-  color: #3997dfe8;
+  color: #096dbae8;
 }
 
 .watch__container .schedule__btn {
@@ -625,7 +625,7 @@ body {
   font-size: 60px;
   font-weight: 700;
   margin-top: 50px;
-  color: #3997dfe8;
+  color: #096dbae8;
 }
 
 @media (max-width: 64em) {
@@ -843,7 +843,6 @@ body {
 }
 
 .contact {
-  border-top: 5px solid #3997dfe8;
   overflow-x: hidden;
 }
 
@@ -1073,7 +1072,7 @@ body {
 
 .home .card-title {
   font-size: 39px;
-  color: #096dbae8;
+  color: #e6fbffe8;
 }
 
 @media (max-width: 64em) {
@@ -1129,9 +1128,9 @@ body {
 }
 
 .trusted {
-  background-color: #292f45;
+  background-color: #0d3c61;
   overflow-x: hidden;
-  padding: 100px 0px;
+  padding: 50px 0px;
   text-align: center;
 }
 

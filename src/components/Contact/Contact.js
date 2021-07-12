@@ -67,7 +67,7 @@ const Contact = () => {
                     <Footer></Footer>
                 </>
             ) : (
-                <div className="contact" data-aos="fade-up">
+                <div className="contact" data-aos="fade-up" id="request-a-call">
                     {/* <Helmet>
                         <title>Contact | Kuf Academy</title>
                         <meta
@@ -137,7 +137,9 @@ const Contact = () => {
                                     className={sub && "success"}
                                 ></textarea>
                             </div>
-                            <button type="submit">Submit Application</button>
+                            <button type="submit">
+                                Request for Free Consultation
+                            </button>
                         </form>
                     </div>
                 </div>

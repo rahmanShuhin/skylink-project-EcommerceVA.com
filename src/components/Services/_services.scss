@@ -7,7 +7,7 @@
             font-size: 60px;
             font-weight: 700;
             margin-top: 50px;
-            color: $primary-dark;
+            color: $primary-light;
             @include breakpoints-down(medium) {
                 font-size: 45px;
             }
@@ -58,7 +58,8 @@
 
             & .card-title {
                 font-size: 45px;
-                color: #096dbae8;
+
+                color: #e6fbffe8;
                 @include breakpoints-down(medium) {
                     font-size: 45px;
                 }

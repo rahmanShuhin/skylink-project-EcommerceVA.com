@@ -23,8 +23,11 @@ const Services = () => {
     return (
         <div className="service" id="service">
             <div className="__service__top" data-aos="fade-up">
-                <h2>Our Services</h2>
-                <p>What do we do for our clients?</p>
+                <h2>What Can We Do For You? </h2>
+                <p>
+                    EcommerceVA intends to provide end-to-end support to Amazon
+                    stores.
+                </p>
             </div>
             <div className="__service__img" data-aos="fade-up">
                 <img src={arrow} alt="" />
