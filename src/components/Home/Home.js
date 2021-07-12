@@ -3,6 +3,8 @@ import Landing from '../Landing/Landing';
 import { Card, Col, Row, Button } from "react-bootstrap";
 import Contact from '../Contact/Contact';
 import { Link } from 'react-router-dom';
+import Horizontal from '../Horizontal/Horizontal';
+import Trusted from '../Trusted/Trusted';
 
 const Home = () => {
   const data = [
@@ -61,6 +63,8 @@ const Home = () => {
           </Row>
         </div>
       </div>
+      <Horizontal />
+      <Trusted />
       <Contact />
     </div>
   );

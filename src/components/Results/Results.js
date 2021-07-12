@@ -1,11 +1,12 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import arrow from "../../../src/images/Arrows---Copy_orrange.png";
-import results from "../../../src/images/results1.png";
-import results2 from "../../../src/images/results2.png";
-import results3 from "../../../src/images/results3.png";
-import results4 from "../../../src/images/results4.png";
-import results5 from "../../../src/images/results5.png";
+import results from "../../../src/images/1.png";
+import results2 from "../../../src/images/2.png";
+import results3 from "../../../src/images/3.png";
+import results4 from "../../../src/images/4.png";
+import results5 from "../../../src/images/5.png";
+import results6 from "../../../src/images/6.png";
 import Horizontal from "../Horizontal/Horizontal";
 
 const Results = () => {
@@ -19,14 +20,11 @@ const Results = () => {
       </div>
       <div className="__results__bottom__img">
         <Container>
-          <div className="main_img" data-aos="fade-up">
-            <img src={results} alt="" className="img-fluid" />
-          </div>
-          <div className="__section__one__img">
+          <div className="main__img" data-aos="fade-up">
             <Row>
               <Col md={6}>
                 <img
-                  src={results2}
+                  src={results}
                   alt=""
                   className="img-fluid"
                   data-aos="fade-right"
@@ -34,7 +32,27 @@ const Results = () => {
               </Col>
               <Col md={6}>
                 <img
+                  src={results2}
+                  alt=""
+                  className="img-fluid"
+                  data-aos="fade-left"
+                />
+              </Col>
+            </Row>
+          </div>
+          <div className="__section__one__img">
+            <Row>
+              <Col md={6}>
+                <img
                   src={results3}
+                  alt=""
+                  className="img-fluid"
+                  data-aos="fade-right"
+                />
+              </Col>
+              <Col md={6}>
+                <img
+                  src={results4}
                   alt=""
                   className="img-fluid"
                   data-aos="fade-left"
@@ -46,7 +64,7 @@ const Results = () => {
             <Row>
               <Col md={6}>
                 <img
-                  src={results4}
+                  src={results5}
                   alt=""
                   className="img-fluid"
                   data-aos="fade-right"
@@ -54,7 +72,7 @@ const Results = () => {
               </Col>
               <Col md={6}>
                 <img
-                  src={results5}
+                  src={results6}
                   alt=""
                   className="img-fluid"
                   data-aos="fade-left"
