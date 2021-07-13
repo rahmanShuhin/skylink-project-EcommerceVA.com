@@ -2,36 +2,20 @@ import React, { useState } from "react";
 import Confirmation from "./Confirmation";
 import Footer from "../Footer/Footer";
 import emailjs from "emailjs-com";
-import "react-phone-number-input/style.css";
-import PhoneInput from "react-phone-number-input";
+
 import { Helmet } from "react-helmet";
+import { SMTPClient } from "smtp-client";
 const Contact = () => {
     const [email, setEmail] = useState(false);
     const [name, setName] = useState(false);
     const [sub, setSub] = useState(false);
     const [sent, setSent] = useState(false);
     const [value, setValue] = useState(false);
+    const [subject, setSubject] = useState(false);
 
     const handleSubmit = (e) => {
         setSub(true);
-        if (email && name) {
-            setSent(true);
-            emailjs
-                .sendForm(
-                    "service_zh8tedo",
-                    "template_k1mxmaa",
-                    e.target,
-                    "user_r28jwDwRGxJXeoJcqAC7H"
-                )
-                .then(
-                    (result) => {
-                        console.log(result.text);
-                    },
-                    (error) => {
-                        console.log(error.text);
-                    }
-                );
-        }
+        setSent(true);
         e.preventDefault();
     };
 
@@ -53,6 +37,13 @@ const Contact = () => {
         }
     };
 
+    const handleSubject = (e) => {
+        if (e) {
+            setSubject(true);
+        } else {
+            setSubject(false);
+        }
+    };
     function validateEmail(email) {
         const re =
             /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -116,15 +107,18 @@ const Contact = () => {
                                 />
                             </div>
                             <div>
-                                <label htmlFor="">
-                                    Phone Number (Optional):
-                                </label>
-                                <PhoneInput
-                                    placeholder="Your Phone Number Here..."
-                                    value={value}
-                                    onChange={setValue}
-                                    className={sub && "success"}
-                                    name="phone"
+                                <label htmlFor="">*Subject:</label>
+                                <input
+                                    type="text"
+                                    placeholder="Email Subject Here..."
+                                    name="subject"
+                                    onChange={(e) =>
+                                        handleSubject(e.target.value)
+                                    }
+                                    className={
+                                        (!subject && sub && "error") ||
+                                        (subject && sub && "success")
+                                    }
                                 />
                             </div>
                             <div>

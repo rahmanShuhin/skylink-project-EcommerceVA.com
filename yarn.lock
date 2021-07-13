@@ -7272,6 +7272,11 @@ libphonenumber-js@^1.9.22:
   resolved "https://registry.yarnpkg.com/libphonenumber-js/-/libphonenumber-js-1.9.22.tgz#b6b460603dedbd58f2d71f15500f216d70850fad"
   integrity sha512-nE0aF0wrNq09ewF36s9FVqRW73hmpw6cobVDlbexmsu1432LEfuN24BCudNuRx4t2rElSeK/N0JbedzRW/TC4A==
 
+line-buffer@^0.1.4:
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/line-buffer/-/line-buffer-0.1.4.tgz#e07de183310b60122fde4b335cf6606543ffb1d3"
+  integrity sha1-4H3hgzELYBIv3kszXPZgZUP/sdM=
+
 lines-and-columns@^1.1.6:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.1.6.tgz#1c00c743b433cd0a4e80758f7b64a57440d9ff00"
@@ -9337,6 +9342,16 @@ promise@^8.1.0:
   dependencies:
     asap "~2.0.6"
 
+promised-timeout@0.5.1:
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/promised-timeout/-/promised-timeout-0.5.1.tgz#56bd98eb8c59e594dae85551bc54451cd4584c23"
+  integrity sha1-Vr2Y64xZ5ZTa6FVRvFRFHNRYTCM=
+
+promised-timeout@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/promised-timeout/-/promised-timeout-0.2.0.tgz#45eafcf5ed9457e2e60efa77c2c860d6ef1d816e"
+  integrity sha1-Rer89e2UV+LmDvp3wshg1u8dgW4=
+
 prompts@2.4.0:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/prompts/-/prompts-2.4.0.tgz#4aa5de0723a231d1ee9121c40fdf663df73f61d7"
@@ -10554,6 +10569,22 @@ slice-ansi@^4.0.0:
     ansi-styles "^4.0.0"
     astral-regex "^2.0.0"
     is-fullwidth-code-point "^3.0.0"
+
+smtp-channel@0.2.3:
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/smtp-channel/-/smtp-channel-0.2.3.tgz#db660868ad3b5296775ec8078c38aa634c4dcda6"
+  integrity sha512-5PR7qW88Z6GcLfvgop6WpUMwNoJKKQY9CP8Gpk5INbSs3UtWqMgFYkTTMaynnbj+6e4D/L0JuagbuH3fjm4+Fw==
+  dependencies:
+    line-buffer "^0.1.4"
+    promised-timeout "^0.2.0"
+
+smtp-client@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/smtp-client/-/smtp-client-0.4.0.tgz#2015da1f4d9821e67bf22ced01568b027d305245"
+  integrity sha512-TvxdX02b96hN6732TGkXcXHsaTeXgVMXjdAhYzz/pLGE6V1p/5jh1XYJa/PfE+O21jHLmwHYWVP3c7JNFWwmOg==
+  dependencies:
+    promised-timeout "0.5.1"
+    smtp-channel "0.2.3"
 
 snapdragon-node@^2.0.1:
   version "2.1.1"

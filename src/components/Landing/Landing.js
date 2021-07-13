@@ -16,13 +16,10 @@ const Landing = ({ aos_effect, title, after, description, home }) => {
         }
     }, []);
     return (
-        <div className="landing" data-aos="fade-up">
+        <div className="landing" data-aos="zoom-up">
             <Helmet>
-                <title>{title}</title>
-                <meta
-                    name="description"
-                    content="Get a fully functional E-Commerce business created, modified, and scaled 100% for you."
-                />
+                <title>{`${title} ${" "} ${after}`}</title>
+                <meta name="description" content={description} />
             </Helmet>
 
             <div className="landing__top" data-aos="fade-left">
@@ -32,9 +29,9 @@ const Landing = ({ aos_effect, title, after, description, home }) => {
                 <p>{description}</p>
             </div>
             <div className="landing__bottom" data-aos="fade-right">
-                <Link to="/request-a-call/">
+                <a href="/#request-a-call">
                     <button>Request for Free Consultation</button>
-                </Link>
+                </a>
             </div>
         </div>
     );

@@ -25,11 +25,12 @@ function App() {
         <Router>
             <Switch>
                 <div className="App">
-                    <Nav></Nav>
                     <Route exact path="/">
+                        <Nav to={"/"}></Nav>
                         <Home></Home>
                     </Route>
                     <Route exact path="/amazon/">
+                        <Nav to={"/amazon/"}></Nav>
                         <Landing
                             title={"Get Fully Automated"}
                             after={"Amazon Store"}
@@ -37,8 +38,8 @@ function App() {
                                 "Through our Management Service, you will be able to create,modify, and scale 100% of your E-Commerce business."
                             }
                         ></Landing>
-                        <Services></Services>
                         <Trusted></Trusted>
+                        <Services></Services>
                         <WatchVideo></WatchVideo>
                         <Results></Results>
                         {/* <GetStart></GetStart> */}
@@ -46,6 +47,7 @@ function App() {
                         <Contact></Contact>
                     </Route>
                     <Route exact path="/walmart/">
+                        <Nav to={"/walmart/"}></Nav>
                         <Landing
                             title={"Get Your Own"}
                             after={"Automated Walmart Store"}
@@ -53,8 +55,8 @@ function App() {
                                 "Through our Management Service, you will be able to create,modify, and scale 100% of your E-Commerce business."
                             }
                         ></Landing>
-                        <Services></Services>
                         <Trusted></Trusted>
+                        <Services></Services>
                         <WatchVideo></WatchVideo>
                         <Results></Results>
                         {/* <GetStart></GetStart> */}
@@ -62,6 +64,7 @@ function App() {
                         <Contact></Contact>
                     </Route>
                     <Route exact path="/fb-dropship/">
+                        <Nav to={"/fb-dropship/"}></Nav>
                         <Landing
                             title={"Get Your Own"}
                             after={"FB Dropship Store"}
@@ -69,8 +72,9 @@ function App() {
                                 "Through our Management Service, you will be able to create,modify, and scale 100% of your E-Commerce business."
                             }
                         ></Landing>
-                        <Services></Services>
                         <Trusted></Trusted>
+                        <Services></Services>
+
                         <WatchVideo></WatchVideo>
 
                         <Results></Results>
@@ -78,9 +82,7 @@ function App() {
                         <Automated></Automated>
                         <Contact></Contact>
                     </Route>
-                    <Route exact path="/request-a-call/">
-                        <Contact></Contact>
-                    </Route>
+
                     <Footer></Footer>
                 </div>
             </Switch>

@@ -2,6 +2,10 @@
     @include fixed-bg(130px);
     text-align: center;
     overflow-x: hidden;
+    margin-top: 100px;
+    @include breakpoints-down(medium) {
+        margin-top: 50px;
+    }
     &__top {
         background-color: #d3efff;
         padding: 90px 20px 70px 20px;
