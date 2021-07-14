@@ -42,6 +42,7 @@ const Home = () => {
                     "Your E-Commerce business can be created, modified, and scaled fully through our Management Service."
                 }
                 home={true}
+                to={"/"}
             />
             <Trusted />
             <div className="home__content">

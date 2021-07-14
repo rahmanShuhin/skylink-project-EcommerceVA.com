@@ -37,49 +37,75 @@ function App() {
                             description={
                                 "Through our Management Service, you will be able to create,modify, and scale 100% of your E-Commerce business."
                             }
+                            to={"/amazon/"}
                         ></Landing>
                         <Trusted></Trusted>
-                        <Services></Services>
-                        <WatchVideo></WatchVideo>
+                        <Services
+                            store={"Amazon"}
+                            service1={
+                                "The purpose of an Amazon automation business is to earn passive income without lifting a finger. This is what our team does for clients while targeting a 15%-35% profit margin. Amazon Automation client stores hold a market value of over $1 million after 18 months of operating with us on average."
+                            }
+                        ></Services>
+                        <WatchVideo to={"/amazon/"}></WatchVideo>
                         <Results></Results>
                         {/* <GetStart></GetStart> */}
-                        <Automated></Automated>
+                        <Automated
+                            text1={"In the Amazon store automation market, "}
+                        ></Automated>
                         <Contact></Contact>
                     </Route>
                     <Route exact path="/walmart/">
                         <Nav to={"/walmart/"}></Nav>
                         <Landing
-                            title={"Get Your Own"}
-                            after={"Automated Walmart Store"}
+                            title={"Get Fully Automated "}
+                            after={"Walmart Store"}
                             description={
-                                "Through our Management Service, you will be able to create,modify, and scale 100% of your E-Commerce business."
+                                "We ensure your Walmart store is set up and ready to be successfully automated whether it is brand new or an aged store transferred to our management teams. We provide you an Onboarding Checklist for you to complete and instructions for when you apply for your Walmart seller account. Once you’re approved, we take over!."
                             }
+                            to={"/walmart/"}
                         ></Landing>
                         <Trusted></Trusted>
-                        <Services></Services>
-                        <WatchVideo></WatchVideo>
+                        <Services
+                            store={"Walmart"}
+                            service1={
+                                "We use modern techniques to convert your Walmart store into a successful Dropshipping Store that is totally Automated and allows you to earn even while you sleep. This is what our teams largely do for clients while targeting a 15%-25% profit margin. Additionally, most Walmart Automation client stores earn their first thousand dollars in profit within 2 weeks of launching!"
+                            }
+                        ></Services>
+                        <WatchVideo to={"/walmart/"}></WatchVideo>
                         <Results></Results>
                         {/* <GetStart></GetStart> */}
-                        <Automated></Automated>
+                        <Automated
+                            text1={"In the Walmart store automation market, "}
+                        ></Automated>
                         <Contact></Contact>
                     </Route>
                     <Route exact path="/fb-dropship/">
                         <Nav to={"/fb-dropship/"}></Nav>
                         <Landing
-                            title={"Get Your Own"}
-                            after={"FB Dropship Store"}
+                            title={"Get Fully Automated "}
+                            after={"FB Dropshipping Store"}
                             description={
-                                "Through our Management Service, you will be able to create,modify, and scale 100% of your E-Commerce business."
+                                "We ensure your Facebook dropshipping store is set up and ready to be successfully automated whether it is brand new or an aged store transferred to our management teams. We provide you an Onboarding Checklist for you to complete and instructions then we take over!"
                             }
+                            to={"/fb-dropship/"}
                         ></Landing>
                         <Trusted></Trusted>
-                        <Services></Services>
+                        <Services
+                            store={"FB Dropshipping"}
+                            service1={
+                                "We do Facebook dropshipping store management. The purpose of a Facebook dropshipping automation business is to earn passive income without lifting a finger. Our team can generate a very good amount of sales every day with an excellent profit margin since Facebook only charges a 5% fee."
+                            }
+                        ></Services>
 
-                        <WatchVideo></WatchVideo>
+                        <WatchVideo to={"/fb-dropship/"}></WatchVideo>
 
                         <Results></Results>
                         {/* <GetStart></GetStart> */}
-                        <Automated></Automated>
+                        <Automated
+                            text1={
+                                "In the Facebook dropshipping store automation market, "
+                            }
+                        ></Automated>
                         <Contact></Contact>
                     </Route>
 

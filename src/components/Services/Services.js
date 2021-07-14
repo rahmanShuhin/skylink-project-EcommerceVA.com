@@ -2,14 +2,14 @@ import React from "react";
 import { Card, Col, Row } from "react-bootstrap";
 import arrow from "../../../src/images/Arrows---Copy_orrange.png";
 
-const Services = () => {
+const Services = ({ store, service1 }) => {
     const data = [
         {
             id: 1,
-            head: "Amazon Store Management",
+            head: `${store} Store Management`,
             aos: "fade-right",
             icon: <i className="fas fa-list fa-3x"></i>,
-            text: "The purpose of an Amazon automation business is to earn passive income without lifting a finger. This is what our team does for clients while targeting a 15%-35% profit margin. Amazon Automation client stores hold a market value of over $1 million after 18 months of operating with us on average.",
+            text: service1,
         },
         {
             id: 2,
@@ -25,7 +25,7 @@ const Services = () => {
             <div className="__service__top" data-aos="fade-up">
                 <h2>What Can We Do For You? </h2>
                 <p>
-                    EcommerceVA intends to provide end-to-end support to Amazon
+                    EcommerceVA intends to provide end-to-end support to {store}{" "}
                     stores.
                 </p>
             </div>

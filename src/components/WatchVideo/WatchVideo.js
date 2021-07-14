@@ -3,7 +3,7 @@ import { Col, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Horizontal from "../Horizontal/Horizontal";
 
-const WatchVideo = () => {
+const WatchVideo = ({ to }) => {
     return (
         <div data-aos="fade-up">
             <Horizontal />
@@ -19,9 +19,9 @@ const WatchVideo = () => {
                             <span>We Handle Things Quickly!</span>
                         </h2>
                         <div className="schedule__btn">
-                            <Link to="/request-a-call/">
+                            <a href={`${to}#request-a-call`}>
                                 <button>Request for Free Consultation</button>
-                            </Link>
+                            </a>
                         </div>
                     </Col>
                     <Col md={6} data-aos="fade-left">

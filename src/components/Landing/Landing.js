@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect } from "react";
 
-const Landing = ({ aos_effect, title, after, description, home }) => {
+const Landing = ({ aos_effect, title, after, description, home, to }) => {
     useEffect(() => {
         document.querySelector(".hamburger-menu").classList.remove("animate");
         document
@@ -29,7 +29,7 @@ const Landing = ({ aos_effect, title, after, description, home }) => {
                 <p>{description}</p>
             </div>
             <div className="landing__bottom" data-aos="fade-right">
-                <a href="/#request-a-call">
+                <a href={`${to}#request-a-call`}>
                     <button>Request for Free Consultation</button>
                 </a>
             </div>
