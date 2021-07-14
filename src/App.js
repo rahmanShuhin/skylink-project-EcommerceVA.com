@@ -35,7 +35,7 @@ function App() {
                             title={"Get Fully Automated"}
                             after={"Amazon Store"}
                             description={
-                                "Through our Management Service, you will be able to create,modify, and scale 100% of your E-Commerce business."
+                                "We ensure your Amazon store is set up and ready to be successfully automated whether it is brand new or an aged store transferred to our management teams."
                             }
                             to={"/amazon/"}
                         ></Landing>
@@ -43,7 +43,7 @@ function App() {
                         <Services
                             store={"Amazon"}
                             service1={
-                                "The purpose of an Amazon automation business is to earn passive income without lifting a finger. This is what our team does for clients while targeting a 15%-35% profit margin. Amazon Automation client stores hold a market value of over $1 million after 18 months of operating with us on average."
+                                "The purpose of an Amazon automation business is to earn passive income without lifting a finger. This is what our team does for clients while targeting a 15%-35% profit margin. Amazon Automation client stores hold a market value of over $1 million after 18 months of operating with us on average"
                             }
                         ></Services>
                         <WatchVideo to={"/amazon/"}></WatchVideo>
@@ -60,7 +60,7 @@ function App() {
                             title={"Get Fully Automated "}
                             after={"Walmart Store"}
                             description={
-                                "We ensure your Walmart store is set up and ready to be successfully automated whether it is brand new or an aged store transferred to our management teams. We provide you an Onboarding Checklist for you to complete and instructions for when you apply for your Walmart seller account. Once you’re approved, we take over!."
+                                "We ensure your Walmart store is set up and ready to be successfully automated whether it is brand new or an aged store transferred to our management teams."
                             }
                             to={"/walmart/"}
                         ></Landing>

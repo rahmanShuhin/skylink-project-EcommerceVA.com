@@ -16,7 +16,7 @@ const Services = ({ store, service1 }) => {
             head: "Full Support",
             aos: "fade-left",
             icon: <i className="fas fa-money-check-alt fa-3x"></i>,
-            text: "Our Customer Support & Administrative Assistants can help you effectively handle customer inquiries, manage orders, and keep your business organized. Our staff is dedicated to providing the best customer service and experience.",
+            text: `Our Customer Support & Administrative Assistants can help you effectively handle customer inquiries, manage orders, and keep your business organized. Our staff is dedicated to providing the best customer service and experience. We provide you an Onboarding Checklist for you to complete and instructions for when you apply for your ${store} seller account.!`,
         },
     ];
 
