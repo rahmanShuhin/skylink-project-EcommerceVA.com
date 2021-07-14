@@ -1,16 +1,18 @@
 .contact {
     // border-top: 5px solid $primary-dark;
     overflow-x: hidden;
+    background: linear-gradient($primary-bg, $secondary-bg);
+    color: $white;
 
     &__body {
         @include max-width;
-        box-shadow: 1px 1px 7px gray;
-        max-width: 870px;
+        // box-shadow: 1px 1px 7px gray;
+        max-width: 1000px;
         margin: 50px auto;
-        background-color: #d5f4f9;
+        // background-color: #d5f4f9;
     }
     &__form {
-        padding: 25px;
+        padding: 15px;
         display: flex;
         flex-direction: column;
         &__top {
@@ -18,21 +20,25 @@
             > p:nth-of-type(1) {
                 font-size: 40px;
                 font-weight: 700;
-                color: $primary-light;
+                color: $white;
+                text-align: left;
                 @include breakpoints-down(medium) {
+                     text-align: center;
                     font-size: 25px;
                 }
             }
             > p:nth-of-type(2) {
                 font-size: 28px;
                 font-weight: 400;
+                text-align: left;
                 @include breakpoints-down(medium) {
+                    text-align: center;
                     font-size: 18px;
                 }
                 &::after {
                     content: " Thank you!";
                     font-style: italic;
-                    color: $primary-light;
+                    color: $white;
                 }
             }
         }
@@ -72,7 +78,9 @@
             background: $button-color !important;
             padding: 10px;
             font-size: 25px;
-            color: white;
+            color: $white;
+            border-radius: 20px;
+            border: none;
         }
         .success__box {
             margin-top: 20px;
@@ -91,7 +99,7 @@
         > p:nth-of-type(1) {
             font-size: 70px;
             font-weight: 700;
-            color: $primary-dark;
+            color: $white;
             letter-spacing: 5px;
         }
         > p:nth-of-type(2) {
