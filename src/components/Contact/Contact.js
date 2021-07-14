@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import Confirmation from "./Confirmation";
 import Footer from "../Footer/Footer";
 import emailjs from "emailjs-com";
-
 import { Helmet } from "react-helmet";
 import { SMTPClient } from "smtp-client";
+
 const Contact = () => {
     const [email, setEmail] = useState(false);
     const [name, setName] = useState(false);
@@ -15,7 +15,25 @@ const Contact = () => {
 
     const handleSubmit = (e) => {
         setSub(true);
-        setSent(true);
+        if (email && name && subject) {
+            setSent(true);
+            setSent(true);
+            emailjs
+                .sendForm(
+                    "service_m8ejfgz",
+                    "template_f2cwh0y",
+                    e.target,
+                    "user_zlryVR0rIO2Baeu5WhzsY"
+                )
+                .then(
+                    (result) => {
+                        console.log(result.text);
+                    },
+                    (error) => {
+                        console.log(error.text);
+                    }
+                );
+        }
         e.preventDefault();
     };
 
@@ -55,7 +73,6 @@ const Contact = () => {
             {sent ? (
                 <>
                     <Confirmation></Confirmation>
-                    <Footer></Footer>
                 </>
             ) : (
                 <div className="contact" data-aos="fade-up" id="request-a-call">
