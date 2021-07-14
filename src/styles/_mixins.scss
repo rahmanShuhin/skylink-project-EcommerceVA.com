@@ -41,9 +41,11 @@ $breakpoints-down: (
     padding-top: $size;
     padding-bottom: $size;
     background: linear-gradient($primary-bg, $secondary-bg),
-        url(https://images.pexels.com/photos/3183198/pexels-photo-3183198.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+        url(../images/landing-bg.jpg);
     background-attachment: fixed;
     background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     border-top: 5px solid rgba(0, 0, 0, 0.33);
     border-bottom: 5px solid rgba(0, 0, 0, 0.33);
 }

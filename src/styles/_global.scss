@@ -19,3 +19,28 @@ body {
     font-family: "Source Sans Pro", sans-serif;
     background-color: #e7f7fd !important;
 }
+
+.amazon-bg {
+    background: linear-gradient($primary-bg, $secondary-bg),
+        url(../images/amazon-bg.jpg) !important;
+    background-attachment: fixed !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+.walmart-bg {
+    background: linear-gradient($primary-bg, $secondary-bg),
+        url(../images/walmart-bg.jpg) !important;
+    background-attachment: fixed !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+.fb-dropship-bg {
+    background: linear-gradient($primary-bg, $secondary-bg),
+        url(../images/fb-dropship-bg.jpg) !important;
+    background-attachment: fixed !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}

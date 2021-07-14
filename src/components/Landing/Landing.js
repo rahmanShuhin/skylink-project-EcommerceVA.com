@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useEffect } from "react";
 
-const Landing = ({ aos_effect, title, after, description, home, to }) => {
+const Landing = ({ aos_effect, title, after, description, home, to, bg }) => {
     useEffect(() => {
         document.querySelector(".hamburger-menu").classList.remove("animate");
         document
@@ -15,8 +15,9 @@ const Landing = ({ aos_effect, title, after, description, home, to }) => {
             window.scrollTo(0, 0);
         }
     }, []);
+    console.log(bg);
     return (
-        <div className="landing" data-aos="zoom-up">
+        <div className={`landing ${bg}`} data-aos="zoom-up">
             <Helmet>
                 <title>{`${title} ${" "} ${after}`}</title>
                 <meta name="description" content={description} />

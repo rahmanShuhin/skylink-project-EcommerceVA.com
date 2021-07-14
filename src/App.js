@@ -37,6 +37,7 @@ function App() {
                             description={
                                 "We ensure your Amazon store is set up and ready to be successfully automated whether it is brand new or an aged store transferred to our management teams."
                             }
+                            bg={"amazon-bg"}
                             to={"/amazon/"}
                         ></Landing>
                         <Trusted></Trusted>
@@ -63,6 +64,7 @@ function App() {
                                 "We ensure your Walmart store is set up and ready to be successfully automated whether it is brand new or an aged store transferred to our management teams."
                             }
                             to={"/walmart/"}
+                            bg={"walmart-bg"}
                         ></Landing>
                         <Trusted></Trusted>
                         <Services
@@ -88,6 +90,7 @@ function App() {
                                 "We ensure your Facebook dropshipping store is set up and ready to be successfully automated whether it is brand new or an aged store transferred to our management teams."
                             }
                             to={"/fb-dropship/"}
+                            bg={"fb-dropship-bg"}
                         ></Landing>
                         <Trusted></Trusted>
                         <Services

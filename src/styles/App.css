@@ -22,6 +22,33 @@ body {
   background-color: #e7f7fd !important;
 }
 
+.amazon-bg {
+  background: -webkit-gradient(linear, left top, left bottom, from(#0d3c61), to(rgba(45, 135, 206, 0.7))), url(../images/amazon-bg.jpg) !important;
+  background: linear-gradient(#0d3c61, rgba(45, 135, 206, 0.7)), url(../images/amazon-bg.jpg) !important;
+  background-attachment: fixed !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+.walmart-bg {
+  background: -webkit-gradient(linear, left top, left bottom, from(#0d3c61), to(rgba(45, 135, 206, 0.7))), url(../images/walmart-bg.jpg) !important;
+  background: linear-gradient(#0d3c61, rgba(45, 135, 206, 0.7)), url(../images/walmart-bg.jpg) !important;
+  background-attachment: fixed !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+.fb-dropship-bg {
+  background: -webkit-gradient(linear, left top, left bottom, from(#0d3c61), to(rgba(45, 135, 206, 0.7))), url(../images/fb-dropship-bg.jpg) !important;
+  background: linear-gradient(#0d3c61, rgba(45, 135, 206, 0.7)), url(../images/fb-dropship-bg.jpg) !important;
+  background-attachment: fixed !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
 .nav {
   max-width: 1250px;
   margin: 0px auto;
@@ -223,10 +250,12 @@ body {
 .landing {
   padding-top: 130px;
   padding-bottom: 130px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#0d3c61), to(rgba(45, 135, 206, 0.7))), url(https://images.pexels.com/photos/3183198/pexels-photo-3183198.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
-  background: linear-gradient(#0d3c61, rgba(45, 135, 206, 0.7)), url(https://images.pexels.com/photos/3183198/pexels-photo-3183198.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background: -webkit-gradient(linear, left top, left bottom, from(#0d3c61), to(rgba(45, 135, 206, 0.7))), url(../images/landing-bg.jpg);
+  background: linear-gradient(#0d3c61, rgba(45, 135, 206, 0.7)), url(../images/landing-bg.jpg);
   background-attachment: fixed;
   background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   border-top: 5px solid rgba(0, 0, 0, 0.33);
   border-bottom: 5px solid rgba(0, 0, 0, 0.33);
   text-align: center;
@@ -995,10 +1024,12 @@ body {
 .confirmation {
   padding-top: 250px;
   padding-bottom: 250px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#0d3c61), to(rgba(45, 135, 206, 0.7))), url(https://images.pexels.com/photos/3183198/pexels-photo-3183198.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
-  background: linear-gradient(#0d3c61, rgba(45, 135, 206, 0.7)), url(https://images.pexels.com/photos/3183198/pexels-photo-3183198.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background: -webkit-gradient(linear, left top, left bottom, from(#0d3c61), to(rgba(45, 135, 206, 0.7))), url(../images/landing-bg.jpg);
+  background: linear-gradient(#0d3c61, rgba(45, 135, 206, 0.7)), url(../images/landing-bg.jpg);
   background-attachment: fixed;
   background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   border-top: 5px solid rgba(0, 0, 0, 0.33);
   border-bottom: 5px solid rgba(0, 0, 0, 0.33);
 }
