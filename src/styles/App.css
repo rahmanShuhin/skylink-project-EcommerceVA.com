@@ -35,8 +35,8 @@ body {
 }
 
 .nav img {
-  width: 150px;
-  height: 80px;
+  width: 120px;
+  height: 60px;
 }
 
 @media (max-width: 39.9375em) {
@@ -204,7 +204,7 @@ body {
 }
 
 .nav__container {
-  height: 50px;
+  height: 30px;
 }
 
 @media (min-width: 64em) {
@@ -215,7 +215,7 @@ body {
     top: 0px;
     right: 0px;
     background-color: white;
-    min-height: 100px;
+    min-height: 80px;
     z-index: 1000;
   }
 }
@@ -231,7 +231,7 @@ body {
   border-bottom: 5px solid rgba(0, 0, 0, 0.33);
   text-align: center;
   overflow-x: hidden;
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 @media (max-width: 64em) {

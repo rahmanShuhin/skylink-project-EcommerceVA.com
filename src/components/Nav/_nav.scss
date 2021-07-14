@@ -3,8 +3,8 @@
     padding: 10px 0px;
 
     img {
-        width: 150px;
-        height: 80px;
+        width: 120px;
+        height: 60px;
         @include breakpoints-down(small) {
             width: 200px;
         }
@@ -144,7 +144,7 @@
 }
 
 .nav__container {
-    height: 50px;
+    height: 30px;
     @include breakpoints-up(large) {
         position: fixed;
         width: 100%;
@@ -152,7 +152,7 @@
         top: 0px;
         right: 0px;
         background-color: white;
-        min-height: 100px;
+        min-height: 80px;
         z-index: 1000;
     }
 }

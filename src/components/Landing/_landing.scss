@@ -2,7 +2,7 @@
     @include fixed-bg(130px);
     text-align: center;
     overflow-x: hidden;
-    margin-top: 100px;
+    margin-top: 80px;
     @include breakpoints-down(medium) {
         margin-top: 50px;
     }
