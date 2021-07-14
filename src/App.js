@@ -85,7 +85,7 @@ function App() {
                             title={"Get Fully Automated "}
                             after={"FB Dropshipping Store"}
                             description={
-                                "We ensure your Facebook dropshipping store is set up and ready to be successfully automated whether it is brand new or an aged store transferred to our management teams. We provide you an Onboarding Checklist for you to complete and instructions then we take over!"
+                                "We ensure your Facebook dropshipping store is set up and ready to be successfully automated whether it is brand new or an aged store transferred to our management teams."
                             }
                             to={"/fb-dropship/"}
                         ></Landing>
