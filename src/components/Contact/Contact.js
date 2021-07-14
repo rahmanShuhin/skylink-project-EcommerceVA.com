@@ -12,11 +12,10 @@ const Contact = () => {
     const [sub, setSub] = useState(false);
     const [sent, setSent] = useState(false);
     const [value, setValue] = useState(false);
-    const [subject, setSubject] = useState(false);
 
     const handleSubmit = (e) => {
         setSub(true);
-        if (email && name && subject) {
+        if (email && name) {
             setSent(true);
             setSent(true);
             emailjs
@@ -56,13 +55,6 @@ const Contact = () => {
         }
     };
 
-    const handleSubject = (e) => {
-        if (e) {
-            setSubject(true);
-        } else {
-            setSubject(false);
-        }
-    };
     function validateEmail(email) {
         const re =
             /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -137,21 +129,7 @@ const Contact = () => {
                                             }
                                         />
                                     </div>
-                                    <div>
-                                        <label htmlFor="">*Subject:</label>
-                                        <input
-                                            type="text"
-                                            placeholder="Email Subject Here..."
-                                            name="subject"
-                                            onChange={(e) =>
-                                                handleSubject(e.target.value)
-                                            }
-                                            className={
-                                                (!subject && sub && "error") ||
-                                                (subject && sub && "success")
-                                            }
-                                        />
-                                    </div>
+
                                     <div>
                                         <label htmlFor="">
                                             Message (Optional):
