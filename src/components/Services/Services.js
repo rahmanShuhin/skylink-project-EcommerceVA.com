@@ -1,8 +1,11 @@
 import React from "react";
+import { useState } from "react";
+import { useEffect } from "react";
 import { Card, Col, Row } from "react-bootstrap";
 import arrow from "../../../src/images/Arrows---Copy_orrange.png";
 
-const Services = ({ store, service1 }) => {
+const Services = ({ store, service1, walmart }) => {
+    const [services, setServices] = useState([]);
     const data = [
         {
             id: 1,
@@ -13,13 +16,27 @@ const Services = ({ store, service1 }) => {
         },
         {
             id: 2,
+            head: "Walmart Store Approval",
+            aos: "zoom-up",
+            icon: <i class="fas fa-hand-holding-usd fa-3x"></i>,
+            text: "We will get your Walmart store approval in 2-3 days. We just need supportive documents.",
+        },
+        {
+            id: 3,
             head: "Full Support",
             aos: "fade-left",
             icon: <i className="fas fa-money-check-alt fa-3x"></i>,
             text: `Our Customer Support & Administrative Assistants can help you effectively handle customer inquiries, manage orders, and keep your business organized. Our staff is dedicated to providing the best customer service and experience. We provide you an Onboarding Checklist for you to complete and instructions for when you apply for your ${store} seller account.!`,
         },
     ];
-
+    useEffect(() => {
+        if (!walmart) {
+            const newArr = data.filter((x) => x.id !== 2);
+            setServices(newArr);
+        } else {
+            setServices(data);
+        }
+    }, []);
     return (
         <div className="service" id="service">
             <div className="__service__top" data-aos="fade-up">
@@ -34,8 +51,8 @@ const Services = ({ store, service1 }) => {
             </div>
             <div className="__service__card">
                 <Row>
-                    {data.map((service) => (
-                        <Col lg={6} key={service.id}>
+                    {services.map((service) => (
+                        <Col lg={walmart ? 4 : 6} key={service.id}>
                             <Card
                                 className="__service__card__body"
                                 data-aos={service.aos}
