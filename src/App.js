@@ -116,7 +116,7 @@ function App() {
                             }
                         ></Services>
 
-                        <WatchVideo to={"/fb-dropship/"}></WatchVideo>
+                        <WatchVideo to={"/fb-dropshipping/"}></WatchVideo>
 
                         <Results></Results>
                         {/* <GetStart></GetStart> */}
