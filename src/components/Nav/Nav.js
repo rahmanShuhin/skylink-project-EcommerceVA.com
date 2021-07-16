@@ -17,7 +17,7 @@ const Nav = ({ to }) => {
                 <div className="nav__right" ref={navLinkRef}>
                     <Link to="/walmart/">Walmart</Link>
                     <Link to="/amazon/">Amazon</Link>
-                    <Link to="/fb-dropship/">FB Dropship</Link>
+                    <Link to="/fb-dropshipping/">FB Dropshipping</Link>
                     <a href={`${to}#request-a-call`}>Contact</a>
                 </div>
                 {/* mobile hamburger menu */}

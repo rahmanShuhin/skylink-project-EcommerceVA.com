@@ -94,7 +94,7 @@ function App() {
                     </Route>
 
                     {/* Fb dropship page */}
-                    <Route exact path="/fb-dropship/">
+                    <Route exact path="/fb-dropshipping/">
                         <Nav to={"/fb-dropship/"}></Nav>
                         <Landing
                             title={"Get Fully Automated "}
