@@ -46,7 +46,7 @@ const Home = () => {
                 to={"/"}
             />
             <Trusted />
-            <WatchVideo></WatchVideo>
+            <WatchVideo to={"/"}></WatchVideo>
             <div className="home__content">
                 <h2 data-aos="fade-up">Online Store Management Services</h2>
                 <div className="home__card">
