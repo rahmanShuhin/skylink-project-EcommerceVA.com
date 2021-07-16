@@ -95,14 +95,14 @@ function App() {
 
                     {/* Fb dropship page */}
                     <Route exact path="/fb-dropshipping/">
-                        <Nav to={"/fb-dropship/"}></Nav>
+                        <Nav to={"/fb-dropshipping/"}></Nav>
                         <Landing
                             title={"Get Fully Automated "}
                             after={"FB Dropshipping Store"}
                             description={
                                 "We ensure your Facebook dropshipping store is set up and ready to be successfully automated whether it is brand new or an aged store transferred to our management teams."
                             }
-                            to={"/fb-dropship/"}
+                            to={"/fb-dropshipping/"}
                             bg={"fb-dropship-bg"}
                         ></Landing>
                         <Trusted></Trusted>

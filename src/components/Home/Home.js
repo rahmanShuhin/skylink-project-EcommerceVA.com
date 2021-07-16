@@ -31,7 +31,7 @@ const Home = () => {
             aos: "fade-left",
             icon: <i className="fas fa-money-check-alt fa-3x"></i>,
             text: "Through our Management Service, you will be able to create,modify, and scale 100% of your E-Commerce business.",
-            btnRoute: "fb-dropship/",
+            btnRoute: "fb-dropshipping/",
         },
     ];
     return (
