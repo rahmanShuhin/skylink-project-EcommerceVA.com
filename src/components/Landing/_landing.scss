@@ -9,6 +9,9 @@
     &__top {
         // background-color: #d3efff;
         padding: 90px 20px 70px 20px;
+        @include breakpoints-down(medium) {
+            padding: 0px;
+        }
         // box-shadow: 2px 2px 10px black;
         @include max-width;
         h2 {

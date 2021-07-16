@@ -46,9 +46,10 @@ const Results = () => {
             <div className="__results__bottom__img">
                 <Swiper
                     navigation
-                    Autoplay={true}
-                    spaceBetween={50}
+                    autoplay={{ delay: 3000, disableOnInteraction: false }}
+                    spaceBetween={100}
                     slidesPerView={number}
+                    loop={true}
                 >
                     <SwiperSlide>
                         <img src={results} alt="" />
