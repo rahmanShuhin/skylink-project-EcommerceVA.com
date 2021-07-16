@@ -2,7 +2,9 @@
     padding: 80px 20px;
     @include max-width;
     overflow-x: hidden;
-    h2 {
+    h3 {
+        text-align: center;
+        margin-bottom: 50px;
         font-size: 36px;
         @include breakpoints-down(medium) {
             margin-top: -40px;
@@ -22,6 +24,8 @@
     & .schedule__btn {
         font-size: 30px;
         margin-top: 50px;
+        display: flex;
+        justify-content: center;
         @include breakpoints-down(medium) {
             display: flex;
             justify-content: center;

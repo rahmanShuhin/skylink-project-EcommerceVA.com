@@ -5,6 +5,7 @@ import Contact from "../Contact/Contact";
 import { Link } from "react-router-dom";
 import Horizontal from "../Horizontal/Horizontal";
 import Trusted from "../Trusted/Trusted";
+import WatchVideo from "../WatchVideo/WatchVideo";
 
 const Home = () => {
     const data = [
@@ -45,6 +46,7 @@ const Home = () => {
                 to={"/"}
             />
             <Trusted />
+            <WatchVideo></WatchVideo>
             <div className="home__content">
                 <h2 data-aos="fade-up">Online Store Management Services</h2>
                 <div className="home__card">

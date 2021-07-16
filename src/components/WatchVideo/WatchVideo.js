@@ -8,7 +8,25 @@ const WatchVideo = ({ to }) => {
         <div data-aos="fade-up">
             <Horizontal />
             <div className="watch__container">
-                <Row>
+                <h3>
+                    Here's A Video That Shows You How{" "}
+                    <span>We Handle Things Quickly!</span>
+                </h3>
+                <iframe
+                    width="100%"
+                    height="600"
+                    src="https://www.youtube.com/embed/ZBaSUTSoZY4"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                ></iframe>
+                <div className="schedule__btn">
+                    <a href={`${to}#request-a-call`}>
+                        <button>Request for Free Consultation</button>
+                    </a>
+                </div>
+                {/* <Row>
                     <Col
                         md={6}
                         className="align-self-center"
@@ -25,12 +43,6 @@ const WatchVideo = ({ to }) => {
                         </div>
                     </Col>
                     <Col md={6} data-aos="fade-left">
-                        {/* <iframe
-                            width="100%"
-                            height="400"
-                            src="https://youtu.be/P4YbSDIPiWc"
-                        ></iframe> */}
-
                         <iframe
                             width="100%"
                             height="400"
@@ -41,7 +53,7 @@ const WatchVideo = ({ to }) => {
                             allowfullscreen
                         ></iframe>
                     </Col>
-                </Row>
+                </Row> */}
             </div>
             <div data-aos="fade-up">
                 <Horizontal></Horizontal>

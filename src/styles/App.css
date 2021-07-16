@@ -549,12 +549,14 @@ body {
   }
 }
 
-.watch__container h2 {
+.watch__container h3 {
+  text-align: center;
+  margin-bottom: 50px;
   font-size: 36px;
 }
 
 @media (max-width: 64em) {
-  .watch__container h2 {
+  .watch__container h3 {
     margin-top: -40px;
     font-size: 35px;
     text-align: center;
@@ -562,14 +564,14 @@ body {
 }
 
 @media (max-width: 39.9375em) {
-  .watch__container h2 {
+  .watch__container h3 {
     margin-top: -40px;
     font-size: 35px;
     text-align: center;
   }
 }
 
-.watch__container h2 span {
+.watch__container h3 span {
   font-weight: 700;
   color: #096dbae8;
 }
@@ -577,6 +579,12 @@ body {
 .watch__container .schedule__btn {
   font-size: 30px;
   margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media (max-width: 64em) {
