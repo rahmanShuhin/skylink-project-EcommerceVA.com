@@ -71,7 +71,7 @@ function App() {
                             walmart={true}
                             store={"Walmart"}
                             service1={
-                                "We use modern techniques to convert your Walmart store into a successful Dropshipping Store that is totally Automated and allows you to earn even while you sleep. This is what our teams largely do for clients while targeting a 15%-25% profit margin. Additionally, most Walmart Automation client stores earn their first thousand dollars in profit within 2 weeks of launching!"
+                                "Your store is totally Automated and will allow you to earn even while you sleep. That’s what our teams largely do for clients while targeting a 15%-25% profit margin. Most Walmart Automation client stores earn their first thousand dollars in profit within 2 weeks of launching!"
                             }
                         ></Services>
                         <WatchVideo to={"/walmart/"}></WatchVideo>

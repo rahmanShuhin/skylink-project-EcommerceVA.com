@@ -19,7 +19,7 @@ const Services = ({ store, service1, walmart }) => {
             head: "Walmart Store Approval",
             aos: "zoom-up",
             icon: <i class="fas fa-hand-holding-usd fa-3x"></i>,
-            text: "We will get your Walmart store approval in 2-3 days. We just need supportive documents.",
+            text: "We use modern techniques to convert your Walmart store into a successful Dropshipping store. We will get your Walmart store approval in 2-3 days. We just need supportive documents.",
         },
         {
             id: 3,
